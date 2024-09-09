@@ -7,9 +7,6 @@ def create_model(num_users, num_books):
     # Definir variables clave
     embedding_size = 50  # Tamaño del embedding
 
-    # Características adicionales (del libro)
-    num_features = 100  # columnas de 0 a 99 son las características adicionales
-
     # Input para el filtrado colaborativo (usuarios y libros)
     user_input = keras.Input(shape=(1,), name='user_input')
     book_input = keras.Input(shape=(1,), name='book_input')
@@ -26,7 +23,7 @@ def create_model(num_users, num_books):
     collaborative_vector = layers.Concatenate()([user_vector, book_vector])
 
     # Input para características adicionales del libro
-    book_features_input = keras.Input(shape=(num_features,), name='book_features_input')
+    book_features_input = keras.Input(shape=(104,), name='book_features_input')
 
     # Red densa para procesar las características del contenido del libro
     x = layers.Dense(128, activation='relu')(book_features_input)

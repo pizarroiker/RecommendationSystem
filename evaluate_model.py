@@ -5,10 +5,13 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 # Cargar los datos de prueba
 test_data = pd.read_csv('test_dataset.csv')
 
-# Separar los datos de prueba
+# Separar los datos de entrenamiento
 X_test_user = test_data['user_index']
 X_test_book = test_data['book_index']
-X_test_features = test_data.iloc[:, 6:106]  # Características adicionales
+# Características adicionales
+X_test_features = test_data.drop(['user_index', 'book_index', 'normalized_rating', 'user_id', 'book_id'], axis=1)
+
+# Output
 y_test = test_data['normalized_rating']
 
 # Cargar el modelo entrenado
