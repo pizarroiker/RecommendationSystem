@@ -49,8 +49,8 @@ Antes de empezar, asegúrate de tener instalados:
 ### 3. Ejecutar Notebooks
 
 - Una vez instaladas las librerías ejecutar los notebooks en el orden:
-   1. jupyter `preprocessing_data.ipynb`
-   2. jupyter `model_implementation.ipynb`
+   - jupyter `preprocessing_data.ipynb`
+   - jupyter `model_implementation.ipynb`
 
 ### 4. Ejecutar Aplicación Web
 
