@@ -39,7 +39,7 @@ Antes de empezar, asegúrate de tener instalados:
 ### 1. Clonar el Repositorio
 
 - git clone [https://github.com/pizarroiker/RecommendationSystem.git](https://github.com/pizarroiker/RecommendationSystem.git)
-- cd tu_repositorio
+- cd RecommendationSystem/ (Nos situamos en la terminal dentro del repositorio)
 
 ### 2. Instalar Librerías
 
@@ -49,8 +49,8 @@ Antes de empezar, asegúrate de tener instalados:
 ### 3. Ejecutar Notebooks
 
 - Una vez instaladas las librerías ejecutar los notebooks en el orden:
-      1. `preprocessing_data.ipynb`
-      2. `model_implementation.ipynb`
+      1. jupyter `preprocessing_data.ipynb`
+      2. jupyter `model_implementation.ipynb`
 
 ### 4. Ejecutar Aplicación Web
 
