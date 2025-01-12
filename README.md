@@ -38,12 +38,12 @@ Antes de empezar, asegúrate de tener instalados:
 
 ### 1. Clonar el Repositorio
 
-- git clone https://github.com/tu_usuario/tu_repositorio.git
+- git clone [https://github.com/pizarroiker/RecommendationSystem.git](https://github.com/pizarroiker/RecommendationSystem.git)
 - cd tu_repositorio
 
 ### 2. Instalar Librerías
 
-- Para las librerías que no tengamos instaladas realizar: pip install nombre_libreria==número_vesion
+- Para las librerías que no tengamos instaladas realizar: pip install nombre_libreria==número_version
 - El número de versión es opcional pero se recomienda utilizar Anaconda como entorno ya que al instalar librerías es capaz de resolver dependencias y cuadrar versiones entre las diferentes librerías instaladas.
 
 ### 3. Ejecutar Notebooks
